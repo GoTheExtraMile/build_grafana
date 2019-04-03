@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -qq -y wget tar sqlite libfontconfig curl 
 
 ADD config.ini /grafana/conf/config.ini
 
-ADD camptocamp-grafana-prometheus-alertmanager-datasource-fb4c900 /grafana/plugins
-ADD grafana-piechart-panel-5f249d5 /grafana/plugins
+ADD camptocamp-grafana-prometheus-alertmanager-datasource-fb4c900 /grafana/plugins/camptocamp-grafana-prometheus-alertmanager-datasource-fb4c900
+ADD grafana-piechart-panel-5f249d5 /grafana/plugins/grafana-piechart-panel-5f249d5
 
 USER       nobody
 EXPOSE     3000
